@@ -1,0 +1,208 @@
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+header{
+    position: relative;
+  }
+    /* Remove the default Bootstrap dropdown arrow */
+    .nav-link.dropdown-toggle::after {
+        opacity: 0;
+        font-size: 1px;
+        color: blue;
+    }
+
+    /* Styling for underline effect */
+    .nav-link {
+       
+        padding-bottom: 5px; /* Adds space for the underline */
+    }
+
+       
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 1px;
+        width: 0; /* Start with zero width */
+        background-color: blue;
+        transition: width 0.3s ease; /* Smooth expand animation */
+    }
+
+    /* Show the underline only on hover */
+    .nav-item.dropdown:hover .nav-link::after {
+       opacity: 1;
+        width: 100%; /* Expands to full width on hover */
+    }
+
+    /* Rotate the custom arrow on hover */
+    .icon-wrapper {
+      transform: rotate(0deg);
+
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-item.dropdown:hover .icon-wrapper {
+        transform: rotate(180deg);
+    }
+
+
+    /* Display the dropdown menu on hover */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: flex;
+         /* Aligns the menu directly under the link */
+    }
+
+
+    .dropdown-menu{
+      border: 0px ;
+      border-radius: 0%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+      margin-top: 10px;;
+      width:100vw;
+     
+    }
+
+    .dropdown>a{
+      font-weight: 500;
+      color: black;
+      margin-right: 10px;
+    }
+
+    .support-dropdown{
+      max-width: 1529px;
+      position: absolute;
+      left: -1320%;
+      
+
+    }
+
+    .shop-dropdown{
+        max-width: 1529px;
+        position: absolute;
+        left: -220%;
+    }
+
+    .title{
+        font-size: 20px;
+        margin-bottom:10px;
+        color: grey;
+        font-weight: bolder;
+    }
+
+   
+
+    .shop-dropdown img{
+        max-width: 200px;
+        height:100px;;
+    }
+
+    .technologies-dropdown{
+        max-width: 1529px;
+        position: absolute;
+        left: -160%;
+    }
+
+    .build-with-us-dropdown{
+        max-width: 1529px;
+        position: absolute;
+        left: -400%;
+    }
+
+    .about-us-dropdown{
+        max-width: 1529px;
+        position: absolute;
+        left: -380%;
+    }
+
+    .margin-support{
+        margin-left: 670px;
+    }
+
+    .hr-line{
+        background-color: blue;
+         width:50px;
+         margin-top: -8px;
+         margin-left: 10px;
+         height: 1px;
+    }
+
+
+    .hr-line-insta{
+         width:100px;
+         margin-top: -8px;
+         margin-left: 6px;
+         height: 1px;
+         background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+
+    }
+    .meta-card-1{
+        font-size: 16px;
+}
+
+.second{
+    background-color: #f1f2f4;
+}
+
+
+.third{
+    padding: 4px;;
+    background-color: #f1f2f4;
+}
+
+
+img{
+    margin: 0px;
+}
+
+.meta{
+    margin-left: -20px;;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.meta-img{
+    margin-top: -15PX;
+}
+
+.socials{
+    margin-top: -20px;
+}
+
+.footer li{
+    font-size: small;
+}
+
+.zoom-frame {
+    overflow: hidden; /* Ensures the zoom effect stays within the frame */
+    display: inline-block; /* Ensures the container sizes to the image */
+   /* Optional: Set a fixed height for the frame */
+  }
+
+  .width{
+    width: 450px;
+    padding-right: 20px;
+  }
+  
+
+#google_translate_element select {
+padding: 5px;
+    font-size: 16px;
+  }
+
+img{
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+    
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
